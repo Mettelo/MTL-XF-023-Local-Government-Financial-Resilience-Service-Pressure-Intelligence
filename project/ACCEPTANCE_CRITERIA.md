@@ -1,47 +1,59 @@
-# MTL-XF-023 — Acceptance criteria
+# MTL-XF-023 — Acceptance criteria and domain tests
 
-**Decision to support:** Which comparable authorities and service lines show sustained expenditure pressure requiring medium-term financial-plan challenge, and what further funding or reserve evidence is needed?
+**Business decision owner:** Director of Finance / Section 151 Officer (simulated). **Decision:** Which comparable authorities and service lines show sustained expenditure pressure requiring medium-term financial-plan challenge, and what further funding or reserve evidence is needed?
 
-These criteria assess delivery quality; they do not certify real operational outcomes. Complete a requirement → deliverable → test → evidence → reviewer matrix in the team repository.
+## Delivery sign-off
 
-| ID | Deliverables | Pass condition | Acceptance owner |
+| ID | Deliverables | Required pass evidence | Acceptance owner |
 | --- | --- | --- | --- |
-| AC1 | D1 | Eight or more prioritised requirements map to a named user, deliverable, acceptance test and reviewer. | Business Analyst / simulated sponsor |
-| AC2 | D2 | 100% of core and extension inputs have exact source URL, actual version/coverage, retrieval timestamp, licence evidence, byte size and SHA-256; mutable endpoints have one approved snapshot. | Data Governance Analyst |
-| AC3 | D3 | A distinct reviewer reruns the same frozen inputs in the documented environment and obtains equivalent curated rows and values; explain any nondeterministic ordering. | Data Engineer / independent reviewer |
-| AC4 | D4 | Every input row is accounted for in retained/excluded/quarantined counts; zero unexplained key duplicates; all join multiplication is quantified. | Data Engineer / domain analyst |
-| AC5 | D4–D5 | At least five source cells across two periods or segments reconcile exactly for counts and within source precision for rounded measures. Each tolerance is declared before testing. | Domain analyst / assurance reviewer |
-| AC6 | D5 | All 8 listed measures have definitions, source lineage and edge-case behaviour; conditional unavailable metrics show an explicit reason, no fabricated value. | Data Governance Analyst / BI Developer |
-| AC7 | D6 | At least five findings state scope, magnitude, comparison and limitation; all five business questions are answered or have an evidenced data gap. | Domain analyst |
-| AC8 | D7 | Up to ten investigation cases have reason codes, supporting metrics, an owner and missing-evidence request; at least two priority scenarios show membership/rank changes and rationale. | Specialist policy/operations role |
-| AC9 | D8 | At least five headline BI values reconcile to curated output; all visible filters, reset behaviour, period labels, units and quality warnings are tested. | BI Developer / UAT reviewer |
-| AC10 | D9 | At least ten scenarios include the four mandatory domain cases, calculation, filtering, missingness and reproducibility; expected/actual results and evidence recorded; zero unresolved critical/high defects. | Assurance reviewer |
-| AC11 | D10–D11 | Independent clean rerun evidence, maximum two-page briefing and 15–20 minute presentation exist; every numerical recommendation links to a tested metric/artefact. | Delivery Lead / review panel |
-| AC12 | D12 | Each member has evidence-linked authored and reviewed work, role ownership and presentation/handover contribution; master/team repository distinction maintained. | Delivery Lead |
+| AC1 | D1 | Eight user requirements cover the commissioned questions, named stakeholder actions and core/extension boundary. | Business Analyst / Director of Finance / Section 151 Officer (simulated) |
+| AC2 | D2 | 100% of used source files have approved provenance, version/coverage, licence, retrieval UTC and SHA-256. Required fields and reference versions are checked. | Data Governance Analyst |
+| AC3 | D3 | Every input row is accounted for; keys and all many-to-many/hierarchy effects have explicit checks and no unexplained duplication. | Data Engineer / independent reviewer |
+| AC4 | D4 | Five source cells reconcile within a declared rounding tolerance; all material differences and non-additive totals are explained. | Domain specialist |
+| AC5 | D5 | All 8 metric contracts are classified core/conditional and have tested definitions; no unsupported fields or fabricated unavailable values. | Data Governance Analyst / BI Developer |
+| AC6 | D6 | Five findings cover all business questions or evidence gaps; period, eligible population, magnitude, comparison and limitation are visible. | Domain analyst |
+| AC7 | D7 | The project-specific baseline and alternative below are implemented; eligibility, scenario changes, reason codes and evidence requests are visible. | Director of Finance / Section 151 Officer (simulated) |
+| AC8 | D8 | Five BI measures reconcile to curated outputs; all filters/reset/export retain the scope, units and limitations. | BI Developer / operational UAT user |
+| AC9 | D9 | DT1–DT10 have actual execution evidence and expected/actual outcomes; no unresolved critical/high defect. | Independent reviewer |
+| AC10 | D10 | A distinct member's clean rerun reproduces equivalent core outputs with documented environment and checks. | Independent rerun reviewer |
+| AC11 | D11 | Two-page maximum briefing and 15–20 minute presentation answer the decision and assign investigation owners without unsupported outcomes. | Director of Finance / Section 151 Officer (simulated) / Mettelo panel |
+| AC12 | D12 | Every member links substantive authored and reviewed work, including handover or presentation contribution. | Delivery Lead |
 
-## Required domain acceptance cases
+## Project-specific business success
 
-1. Reconcile five authority/service totals and one parent-child accounting bridge.
-2. Demonstrate correct handling of zero and negative prior expenditure.
-3. Show a reorganised authority is excluded or bridged with documented methodology.
-4. Verify no budget variance or reserve-risk label is produced from outturn alone.
+1. Every peer group documents equivalent service responsibilities and excluded authority types.
+2. Every headline spend movement has a £-unit, cash/real-terms label and accounting-item reference.
+3. Every resilience concern is classified as supported expenditure pressure, additional evidence required, or comparison invalid.
 
-Each case needs test input/reference, expected result, actual result, pass/fail, evidence path, tester, reviewer and execution date. Add cases until there are at least ten; do not count a written assertion as an executed test.
+## Required prioritisation and sensitivity
 
-## Specific analytical sign-off
+Within like-for-like authority responsibilities, compare three-transition sustained-growth cases ordered by absolute service-spend increase and by percentage increase on positive bases. Explain at least 90% of material total change through an accounting bridge or quantify why the hierarchy is non-additive. Attach funding/reserve/demand evidence requests before any resilience judgement.
 
-- Produce authority/service spend bridges explaining at least 90% of material total cash change or explicitly account for the residual.
-- Create like-for-like peer groups and show the effect of authority reorganisations on three-year growth.
-- Shortlist up to ten authority/service cases for financial-plan challenge; compare absolute and percentage pressure and record evidence still required.
+Record each case's entity/segment, valid period, supporting measures, reason code, scenario position, missing evidence, responsible operational role, next review and manual-review trigger. Fewer than ten cases is valid; padding unsupported cases fails acceptance.
 
-Reviewers must verify the declared cohort and grain:
+## DT1–DT10 — minimum executed domain tests
 
-Freeze the agreed Revenue Outturn time-series v4 CSV and its actual metadata, with intended 2017/18–2025/26 coverage. Analyse outturn service expenditure only within compatible definitions and authority responsibilities. Budget-versus-outturn, funding gaps and reserves are conditional extensions requiring additional registered sources.
+| Test | Input / action | Expected pass evidence |
+| --- | --- | --- |
+| DT1 | Reconcile five authority/service totals and one parent-child accounting bridge. | Five selected published values reproduce within declared source precision, with explicit source coordinates and scope. |
+| DT2 | Demonstrate correct handling of zero and negative prior expenditure. | The invalid comparison, join or denominator is rejected or flagged according to the documented rule; no silent fallback. |
+| DT3 | Show a reorganised authority is excluded or bridged with documented methodology. | The edge case produces an explicit unavailable/exclusion result or a supported calculation, with affected rows quantified. |
+| DT4 | Verify no budget variance or reserve-risk label is produced from outturn alone. | The domain boundary remains visible in the analytical output and BI product; no unsupported inference. |
+| DT5 | Outturn rises from £10,000 thousand to £12,000 thousand | Change = £2 million and +20%; displayed unit is explicit. |
+| DT6 | England source total differs from sum of available LA returns | Preserve both; explain grossing/coverage rather than force equality. |
+| DT7 | A district and an upper-tier authority have different service remits | They do not enter the same unexplained peer ranking. |
+| DT8 | Service components explain £9m of a £10m increase | Bridge coverage = 90%; £1m residual is visible. |
+| DT9 | Parent total and its child line are both selected | No aggregate double count; hierarchy choice is explicit. |
+| DT10 | Outturn grows but reserve/funding evidence is absent | No solvency judgement or funding gap is fabricated. |
 
-Financial year × local-authority code × authority type × service/account line × published measure/unit. Preserve hierarchy levels and gross/net accounting distinctions; do not sum parent totals with children.
+Worked values are **synthetic test fixtures**, not claims about the public data or simulated client. For each test retain requirement ID, source/input or fixture, expected result, actual result, evidence link, tester, independent reviewer and date. DT1–DT4 additionally require the documented project-specific rule; their general evidence descriptions do not waive the named domain condition. Add dashboard/filter tests as needed beyond these ten.
 
-## Failed or unavailable evidence
+## Scope gate and unresolved issues
 
-A conditional metric may be marked unavailable when the source lacks its dimensions, with a documented alternative or evidence request. This does not waive the core model, dashboard or assurance. A change to a mandatory requirement needs a change log entry with impact and simulated-panel approval. Missing sources mean the data freeze remains pending; do not mark a source gate passed.
+**Mandatory core:** Comparable English authority/service outturn analysis from the agreed multi-year CSV with the official metadata workbook as a required reference. Focus on net current service expenditure and declared service hierarchies. Preserve published England/class totals as source totals and distinguish them from sums of received LA returns.
 
-Critical/high means a defect materially changes a headline value, cohort, recommendation, provenance or reproducibility. Such defects block final acceptance. Lower-severity limitations need named acceptance and disclosed effect. No stakeholder approval may be invented; record simulated UAT as simulated.
+**Optional extensions:** Funding adequacy, reserve sustainability, budget/outturn variance and real-terms growth are separate analyses requiring compatible verified items or registered additional sources. The resilience deliverable is an evidence-based challenge assessment, not a solvency score.
+
+A mandatory source/field gap blocks the affected deliverable and must be resolved by a registered official replacement or approved, versioned scope change. An explicitly optional result may be unavailable with a reason and a useful evidence request. Neither missing raw data nor unexecuted tests may be marked passed.
+
+A critical/high defect materially changes a headline value, cohort, recommendation, provenance or reproducibility and blocks release. Lower-impact issues require a named acceptance owner and disclosed impact. All panel feedback and approvals must be recorded honestly as simulated where applicable.

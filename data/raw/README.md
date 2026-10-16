@@ -1,11 +1,11 @@
-# MTL-XF-023 — Raw source snapshots
+# MTL-XF-023 — Raw input guidance
 
-**State:** no raw data uploaded by this build.
+**Current state:** no raw data uploaded by this specification revision.
 
-Freeze the agreed Revenue Outturn time-series v4 CSV and its actual metadata, with intended 2017/18–2025/26 coverage. Analyse outturn service expenditure only within compatible definitions and authority responsibilities. Budget-versus-outturn, funding gaps and reserves are conditional extensions requiring additional registered sources.
+Use only the files activated under [SOURCE_REGISTER.md](../SOURCE_REGISTER.md) and the approved [core contract](../README.md). Original bytes belong here only after later acquisition/upload authorisation and verified redistribution conditions. Keep cleaned extracts, corrections and dashboard outputs elsewhere.
 
-The exact agreed inputs are listed in [the source register](../SOURCE_REGISTER.md). This folder is reserved for original publisher bytes only after controlled acquisition and permission under verified reuse terms. Never place cleaned extracts, manually corrected files or dashboard exports here.
+For each input retain original filename, source ID, resolved URL, retrieval UTC, actual release, byte count and SHA-256. Preserve archive members/sheets and versioned paths; never overwrite an approved snapshot. A fallback replaces the specified input under its documented activation rule; overlapping snapshots must not be double counted.
 
-For every approved snapshot, retain source ID, original/resolved URL, retrieval UTC, publisher version, original filename, byte size and SHA-256 in metadata. Preserve archived member names and sheet structure. Use versioned paths rather than overwriting a snapshot. Validate expected file type and schema before ingestion; retain failures in an acquisition log.
+Data Engineer verifies identity on rerun; Data Governance Analyst and domain specialist approve freeze. If file redistribution is restricted, retain authorised access instructions, manifest and metadata instead of prohibited bytes.
 
-The Data Governance Analyst controls freeze approval; the Data Engineer verifies checksums on each run. If redistribution is restricted, preserve the manifest and authorised retrieval instructions in the approved location rather than uploading prohibited bytes. Do not add data merely to make the repository look populated.
+**Project-specific hazard:** Incompatible authority responsibilities, accounting hierarchies and coverage-adjusted totals can change the interpretation of apparent financial pressure.

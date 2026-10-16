@@ -1,23 +1,9 @@
-# MTL-XF-023 — Reference data and mappings
+# MTL-XF-023 — Reference mappings
 
-## Purpose
+References support the approved [model and cohort](../README.md). Do not assume a mapping exists solely because entity names look similar.
 
-Maintain the code lists and crosswalks needed to implement this analytical grain:
+Required acquisition checks: Required reference: https://assets.publishing.service.gov.uk/media/6ac3c069241ecad55a9793ae/Revenue_Outturn_metadata.ods . Use its dictionary to map selected items, including candidate RS_asc_net_exp, RS_csc_net_exp and RS_totsx_net_exp. Normalise selected wide columns into the documented analytical grain; confirm names in the frozen version.
 
-Financial year × local-authority code × authority type × service/account line × published measure/unit. Preserve hierarchy levels and gross/net accounting distinctions; do not sum parent totals with children.
+For each mapping record source/version, licence, key, definition, valid dates, uniqueness, relationship cardinality, unmatched coverage and responsible domain steward. Quantify every unmapped category/entity. Keep totals distinct from components and do not multiply fact rows through many-to-many crosswalks.
 
-Potential references are the publisher's geography/entity identifiers, category hierarchies, period definitions, units, status codes and revision markers. Include only references actually needed by the model. Register any separately downloaded official file as an additional source.
-
-## Required mapping evidence
-
-Each reference needs source/version, licence, valid-from/to dates, key uniqueness, allowed values, business meaning, owner and transformation use. For each crosswalk record source key, target key, relationship cardinality, rationale and treatment of unmapped or changed entities. Quantify 100% of unmatched keys; do not silently drop them or infer a mapping from similar names.
-
-Avoid multiplying facts when a reference is many-to-many. Keep parent totals distinct from child categories. Non-official analyst-created groupings must be labelled as project assumptions and sensitivity-tested where they affect the investigation shortlist.
-
-## Domain constraints
-
-- Expenditure growth alone does not establish insolvency, a funding gap or statutory financial failure.
-- Use nominal cash labels; real-terms claims require a registered deflator and disclosed base year.
-- Do not invent budget, reserves or service-demand measures absent from the core file.
-
-The domain specialist approves category meaning and comparability. The Data Engineer supplies uniqueness, join-cardinality and coverage checks before the reference enters the curated model.
+Analyst-created groupings and eligibility thresholds are labelled project assumptions. If they affect case selection, show their effect in [the scenario comparison](../../project/ACCEPTANCE_CRITERIA.md). Candidate raw field names or download references in the source register still require actual version validation.

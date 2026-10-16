@@ -1,58 +1,82 @@
 # MTL-XF-023 — Business context
 
-## Organisation and pressure
+## Organisation and decision owner
 
-**Local Government Financial Resilience, Service Spend & Budget Pressure Intelligence.** A council finance directorate needs to identify which services are driving expenditure pressure, which authorities are seeing persistent growth, and where medium-term financial plans need deeper challenge.
+**Simulated client:** Confidential Local Government Finance & Service Planning Directorate. **Accountable executive:** Director of Finance / Section 151 Officer (simulated). **Review cadence:** annual medium-term financial planning challenge, with quarterly management follow-up.
 
-The simulated sponsor, Confidential Local Government Finance & Service Planning Directorate, must decide where to direct limited analytical and service-review attention. Its starting problem is an inconsistent view of local government financial resilience, service spend & budget pressure intelligence: totals, rates, periods and categories can lead users to different conclusions without a common definition. The engagement supplies an evidence base; it does not assume the client has already suffered a quantified failure.
+This fictional directorate/board is an engagement scenario, not an assertion of a real client's circumstances. The source data remains official public/open data.
 
-## Current process and its consequences
+## Business problem
 
-Analysts retrieve official tables independently, prepare local summaries and discuss headline differences in management meetings. Without a shared cohort and definition register, revisions, incomparable denominators and missing coverage can pass into recommendations. The consequence is an investigation shortlist that cannot be explained or reproduced, rather than a verified estimate of financial loss.
+The finance directorate must challenge expenditure assumptions across services without treating every spending increase as financial deterioration. Comparing an upper-tier council's social-care responsibilities with a district's narrower service remit can create misleading peer rankings. Parent totals, net expenditure and income items can also be counted inconsistently unless the analytical model follows the accounting structure.
 
-## Required decision process
+## Why the current process is insufficient
 
-1. Confirm the reporting cohort and available dimensions.
-2. Review governed metrics and quality exceptions before interpreting patterns.
-3. Compare like-for-like trends and segment evidence against the questions below.
-4. Challenge at least two prioritisation scenarios and document changes in shortlisted cases.
-5. Assign a responsible role, evidence-gathering action and review point to every proposed investigation.
+The current scenario relies on separately prepared reports without a common source/metric contract. The material failure to prevent is specific: Incompatible authority responsibilities, accounting hierarchies and coverage-adjusted totals can change the interpretation of apparent financial pressure.
 
-**Decision:** Which comparable authorities and service lines show sustained expenditure pressure requiring medium-term financial-plan challenge, and what further funding or reserve evidence is needed?
+This creates uncertainty over which cases need investigation and which comparisons should be rejected. No quantified loss, backlog, budget deficit or service failure is invented as a client fact.
 
-## Business questions and evidence
+## Stakeholders and decisions
 
-| Question | Expected evidence |
+| Simulated stakeholder | Decision / review responsibility |
 | --- | --- |
-| Which service lines account for most of the change in comparable net expenditure? | Reconciled trend/segment table and diagnostic chart with period, grain, denominator and source references. |
-| Which authorities show expenditure growth across at least three comparable years? | Reconciled trend/segment table and diagnostic chart with period, grain, denominator and source references. |
-| Do rankings change when comparing absolute change, percentage change and like-for-like authority peers? | Segment or coverage assessment stating which comparisons are supported. |
-| Which reorganisations or accounting changes make trends unreliable? | Sensitivity or scope audit showing what changes the interpretation. |
-| What funding, reserves, inflation and demand data are required before a resilience judgement? | Investigation plan with missing evidence, owner and decision-review trigger. |
+| Director of Finance / Section 151 Officer (simulated) | Accountable for scope, investigation priorities, accepted limitations and final business sign-off. |
+| Head of Financial Planning | Own service-spend bridges and challenge questions for the medium-term plan. |
+| Adult & Children’s Services Finance Leads | Interpret service responsibility and demand evidence behind spending movements. |
+| Corporate Risk & Assurance Lead | Challenge whether expenditure indicators are being overstated as solvency evidence. |
+| Local Government Finance Data Steward | Approve authority types, accounting items and reorganisation treatment. |
 
-## Intended management use
+## Commissioned decision
+
+Which comparable authorities and service lines show sustained expenditure pressure requiring medium-term financial-plan challenge, and what further funding or reserve evidence is needed?
+
+## Practical management use case
+
+During the financial-plan review, the Director opens an authority's change bridge and sees whether adult social care, children's services or another service explains the movement in comparable net expenditure. The finance lead compares equivalent authority types and requests funding, reserve and demand evidence before deciding whether the signal indicates a resilience concern or an expected service change.
+
+## Current-to-target workflow
+
+1. **Before review:** analyst registers the approved files, coverage and definitions; steward checks the cohort and unresolved exceptions.
+2. **At review:** Director of Finance / Section 151 Officer (simulated) opens the overview, then inspects diagnostics and the underlying eligible population before considering a case.
+3. **Challenge:** the relevant stakeholder compares the alternative scenario and asks whether the signal survives missingness, comparability and denominator checks.
+4. **Action:** each accepted case records investigation type, responsible service role, missing evidence, next review and what finding would reverse the recommendation.
+5. **Follow-up:** the next annual medium-term financial planning challenge, with quarterly management follow-up records evidence received and the decision, without claiming the analytical signal itself caused an improvement.
+
+## Required analytical response
 
 - Produce authority/service spend bridges explaining at least 90% of material total cash change or explicitly account for the residual.
 - Create like-for-like peer groups and show the effect of authority reorganisations on three-year growth.
 - Shortlist up to ten authority/service cases for financial-plan challenge; compare absolute and percentage pressure and record evidence still required.
 
-The BI executive view starts with the commissioned question, reporting period and coverage. Users inspect a diagnostic view before reading the investigation shortlist. Every case records the signal, its magnitude, uncertainty, alternative explanations, evidence still needed and a next-step owner. The final briefing must explain at least one case where the evidence is insufficient for action.
+## Measurable project outcomes
 
-## Measures of project value
+1. Every peer group documents equivalent service responsibilities and excluded authority types.
+2. Every headline spend movement has a £-unit, cash/real-terms label and accounting-item reference.
+3. Every resilience concern is classified as supported expenditure pressure, additional evidence required, or comparison invalid.
 
-Success means a repeatable review with five supported findings, five reconciled dashboard measures, two compared decision scenarios, ten UAT scenarios and a reproducible handover. Teams may propose a future operational baseline and improvement target, but must label these as proposed measures rather than achieved benefits. No observed savings or service improvement can be claimed from this simulated engagement alone.
+## Proposed benefit monitoring
 
-## Interpretation and evidence limits
+At kickoff, record a baseline review process and propose measures for: time to regenerate the agreed evidence pack; proportion of agenda recommendations with a complete evidence chain; and proportion of accepted investigations with a role owner and next review. The target for recommendation traceability and ownership is 100%; regeneration time is measured during the independent rerun, with no fabricated pre-project baseline or claimed reduction. These are proposed management measures, not achieved service benefits.
+
+## Scope and evidence limits
+
+**Core:** Comparable English authority/service outturn analysis from the agreed multi-year CSV with the official metadata workbook as a required reference. Focus on net current service expenditure and declared service hierarchies. Preserve published England/class totals as source totals and distinguish them from sums of received LA returns.
+
+**Extensions:** Funding adequacy, reserve sustainability, budget/outturn variance and real-terms growth are separate analyses requiring compatible verified items or registered additional sources. The resilience deliverable is an evidence-based challenge assessment, not a solvency score.
 
 - Expenditure growth alone does not establish insolvency, a funding gap or statutory financial failure.
 - Use nominal cash labels; real-terms claims require a registered deflator and disclosed base year.
 - Do not invent budget, reserves or service-demand measures absent from the core file.
 
-## Dependencies and risks
+## Risks, mitigations and escalation
 
-- Source/schema validation may narrow the scope: record an explicit impact decision rather than inventing fields.
-- Data revisions may alter findings: preserve immutable source manifests and rerun comparisons.
-- Small, suppressed or non-comparable segments may distort ordering: apply eligibility rules and show excluded cases.
-- Local context or operational records may be missing: attach an evidence request to the relevant recommendation.
+- **Interpretation risk:** Incompatible authority responsibilities, accounting hierarchies and coverage-adjusted totals can change the interpretation of apparent financial pressure. The domain specialist reviews definitions and DT1–DT10 before sign-off.
+- **Source risk:** Publication, guidance, metadata link and selected item descriptions verified; acquired CSV endpoint/columns and metadata version alignment pending. The steward records unresolved items at G1; mandatory gaps block dependent outputs.
+- **Decision risk:** prioritisation assumptions may affect which cases appear. Show alternative scenarios, excluded cases and evidence that could change a recommendation.
+- **Delivery risk:** limited time or skills can leave undocumented manual steps. Assign a second-member rerun and retain contribution/review evidence throughout the eight weeks.
 
-The domain roles in [the brief](PROJECT_BRIEF.md) own interpretation; the simulated review panel owns decisions.
+## Evidence chain
+
+Stakeholder requirement → registered source and valid cohort → governed field/metric → tested transformation → reconciled finding → scenario reason code → investigation owner/evidence request → simulated UAT and sign-off.
+
+Every major recommendation must be traceable through this chain.

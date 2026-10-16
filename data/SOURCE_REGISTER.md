@@ -1,46 +1,63 @@
-# MTL-XF-023 — Source register
+# MTL-XF-023 — Source register and verification record
 
 **Project:** Local Government Financial Resilience, Service Spend & Budget Pressure Intelligence  
-**Register date:** 16 October 2026  
-**Status:** agreed source references recovered; acquisition, payload verification and freeze approval pending.
+**Documentation review:** 16 October 2026  
+**State:** official documentation checked; acquired-file validation and freeze approval pending.  
+**Steward:** Data Governance Analyst, with the project domain specialist.
 
-## Cohort contract
+## Source/cohort decision
 
-Freeze the agreed Revenue Outturn time-series v4 CSV and its actual metadata, with intended 2017/18–2025/26 coverage. Analyse outturn service expenditure only within compatible definitions and authority responsibilities. Budget-versus-outturn, funding gaps and reserves are conditional extensions requiring additional registered sources.
+Comparable English authority/service outturn analysis from the agreed multi-year CSV with the official metadata workbook as a required reference. Focus on net current service expenditure and declared service hierarchies. Preserve published England/class totals as source totals and distinguish them from sums of received LA returns.
 
-## Source entries
+**Outside core:** Funding adequacy, reserve sustainability, budget/outturn variance and real-terms growth are separate analyses requiring compatible verified items or registered additional sources. The resilience deliverable is an evidence-based challenge assessment, not a solvency score.
 
-### S1 — Revenue_Outturn_time_series_data_v4.csv
+## Official publication and methodology references
 
-Exact agreed download URL (copy verbatim):
+| Official reference | URL |
+| --- | --- |
+| Official multi-year publication | https://www.gov.uk/government/statistics/local-authority-revenue-expenditure-and-financing-england-revenue-outturn-multi-year-data-set |
+| Official dataset guidance | https://www.gov.uk/government/statistics/local-authority-revenue-expenditure-and-financing-england-revenue-outturn-multi-year-data-set/revenue-outturn-multi-year-data-set-guidance |
+
+References above were inspected for this revision. They establish only the evidence described below; they are not a completed file acquisition, licence clearance or signed freeze.
+
+## Verification findings
+
+The publication advertises 2017/18–2025/26 coverage, while the guidance's introductory text still names an earlier endpoint: reconcile this through the actual release log. Guidance describes wide authority/year rows, £ thousands in nominal cash, metadata item definitions and authority histories. Published England/class totals may include coverage adjustments, so they need not equal available-return sums.
+
+**Field/reference mapping and acquisition instructions:** Required reference: https://assets.publishing.service.gov.uk/media/6ac3c069241ecad55a9793ae/Revenue_Outturn_metadata.ods . Use its dictionary to map selected items, including candidate RS_asc_net_exp, RS_csc_net_exp and RS_totsx_net_exp. Normalise selected wide columns into the documented analytical grain; confirm names in the frozen version.
+
+**Remaining status:** Publication, guidance, metadata link and selected item descriptions verified; acquired CSV endpoint/columns and metadata version alignment pending.
+
+## Exact copyable file URLs
+
+Original agreed URLs are retained. Entries labelled required supplement/reference or fallback are explicit changes from the initial pack. Do not silently replace an input with a newer release.
+
+### S1 — Agreed core input 1
 
 ```text
 https://assets.publishing.service.gov.uk/media/6ab26ffffe72ed1e2b02ee74/Revenue_Outturn_time_series_data_v4.csv
 ```
 
-- Publisher/source: MHCLG Revenue Outturn multi-year dataset, covering 2017/18–2025/26. The current CSV is 23.2 MB.
-- Intended role: required core input.
-- Access expectation from agreement: £0, public download, no paid API required.
-- Verification state: URL recovered from the final agreed conversation; browser-only retrieval on 16 October 2026 could not validate the file contents. This is not a completed download/schema/licence check.
-- File acquisition state: **not downloaded or uploaded in this master-pack build**.
-- Actual release/coverage, retrieval UTC, resolved URL, filename, bytes, SHA-256, sheet/archive members, row counts and schema: **pending controlled acquisition**.
-- Licence and redistribution evidence: **pending inspection of the official publication and file notices**. Public accessibility alone does not establish reuse rights.
-- Required before analysis: metadata and coverage validation; freeze approval by Data Governance Analyst and domain analyst.
+**Acquisition:** pending; no source bytes uploaded. Record actual version, coverage, schema and licence before approving use. Core source reference; actual file identity remains to be verified.
 
-## Acquisition manifest requirements
+### R1 — Required metadata workbook
 
-Create one row per acquired file, including archive members and all eight months where applicable:
+```text
+https://assets.publishing.service.gov.uk/media/6ac3c069241ecad55a9793ae/Revenue_Outturn_metadata.ods
+```
 
-`source_id, original_url, resolved_url, retrieved_utc, publisher_release, filename, bytes, sha256, format, sheets_or_members, row_count, coverage_start, coverage_end, geography, schema_version, licence_evidence_path, approved_by, approval_date`
+**Acquisition:** pending; no source bytes uploaded. Record actual version, coverage, schema and licence before approving use. Reference metadata; match its version to the analytical input.
 
-Never enter guessed values. A missing field remains pending with an owner and reason. Source IDs above are local to this project. Preserve the actual publisher metadata and notices alongside the manifest.
+## File validation and licence record
 
-## Validation and fallback
+For every actually used input record:
 
-Browser checks during this build could not inspect downloadable payloads consistently; unsupported download formats and retrieval failures do not prove a URL is broken. They also do not verify schema, current availability, advertised history, size or redistribution rights. Perform a controlled file acquisition before team analysis.
+`source_id, role_core_reference_fallback_extension, original_url, resolved_url, retrieved_utc, actual_release, filename, bytes, sha256, format, sheets_or_members, rows, geography, period_start, period_end, grain, schema_version, methodology_evidence, licence_notice, attribution, redistribution_conditions, approved_by, approval_date`
 
-If the exact link fails, locate the same release through the official publisher's publication series, record the replacement URL and compare version/coverage. Escalate any change to cohort, dimensions or reporting window through the project change log. No paid source or live API is required by the agreed design. No guarantee is made that a publisher URL will remain unchanged indefinitely.
+Retain the relevant publication/file notices, including exceptions and third-party conditions. Do not assume all publishers use the same licence. A stated publication licence does not remove the need to check file-specific terms. Keep unverified values pending; never invent a hash or approval.
 
-## Data sign-off
+## Support and freeze decision
 
-The Data Governance Analyst and domain analyst sign the actual manifest after checking file identity, licence, coverage and definitions. Ingest only the signed cohort. Every headline metric must trace through transformations back to a registered source and field.
+Complete the [source-to-deliverable matrix](README.md). The domain specialist verifies actual grain, units, period comparability and supported metrics; the steward verifies identity and reuse terms. Required missing fields block dependent core outputs. Every activated extension is separately registered. Where a fallback is used, record why, which original it replaces, overlap handling and impact on outputs.
+
+If an agreed URL fails, seek the same official archived release and record evidence. A browser format limitation does not prove a file is unavailable, and a successful page fetch does not prove payload integrity. Preserve the frozen version and metadata in the approved location so future website changes do not silently alter the cohort.
