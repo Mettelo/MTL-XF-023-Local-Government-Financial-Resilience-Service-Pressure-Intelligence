@@ -4,7 +4,7 @@
 **Client:** Confidential Local Government Finance & Service Planning Directorate  
 **Accountable simulated executive:** Director of Finance / Section 151 Officer (simulated)  
 **Sector:** Local Government / Public Finance  
-**Team:** 6–8 people · **Window:** 8 weeks  
+**Team:** 3–5 people · **Window:** 8 weeks  
 **Status:** documentation revised; file acquisition and cohort freeze pending  
 **Review cadence:** annual medium-term financial planning challenge, with quarterly management follow-up
 
