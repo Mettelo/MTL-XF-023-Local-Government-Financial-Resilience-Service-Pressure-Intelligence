@@ -6,9 +6,17 @@ This is a **simulated confidential-client engagement using official public/open 
 
 ## Business problem and commission
 
-The finance directorate must challenge expenditure assumptions across services without treating every spending increase as financial deterioration. Comparing an upper-tier council's social-care responsibilities with a district's narrower service remit can create misleading peer rankings. Parent totals, net expenditure and income items can also be counted inconsistently unless the analytical model follows the accounting structure.
+The simulated finance directorate is preparing its annual medium-term financial-plan challenge. Service finance leads must explain expenditure assumptions, while the Director of Finance needs an evidence-led agenda for the services and comparable authorities requiring deeper scrutiny.
+
+The finance team must decide which service expenditure assumptions deserve challenge before the next medium-term plan is finalised. Current comparisons show headline authority growth but do not consistently explain which services contributed to it, whether the peer councils have equivalent responsibilities, or whether a boundary change breaks the trend.
+
+This leaves two competing risks: accepting a material pressure without an adequate explanation, or challenging an apparent outlier created by an invalid comparison. The commission is to produce a comparable service-spend change bridge and a documented challenge agenda. The core outturn data supports questions about expenditure pressure; funding adequacy, reserves and budget variance need their own compatible evidence.
 
 > Which comparable authorities and service lines show sustained expenditure pressure requiring medium-term financial-plan challenge, and what further funding or reserve evidence is needed?
+
+**Required management handover:** A financial-plan challenge pack containing reconciled service-change bridges, a documented peer map, absolute/percentage pressure scenarios and a challenge log. Each challenge must identify the service finance owner, accounting item, comparison basis and missing evidence needed for the next planning decision.
+
+See [the management use case](BUSINESS_CONTEXT.md#practical-management-use-case) for how the review meeting uses this evidence.
 
 ## Core deliverable boundary
 

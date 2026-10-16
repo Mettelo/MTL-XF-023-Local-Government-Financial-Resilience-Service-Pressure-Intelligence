@@ -10,9 +10,15 @@
 
 > This is a **simulated confidential-client engagement using official public/open data**. Client and stakeholder role labels describe a fictional engagement; do not claim a real external Mettelo customer, employment, endorsement or privileged data access. No raw data is uploaded by this specification update.
 
+## Business setting
+
+The simulated finance directorate is preparing its annual medium-term financial-plan challenge. Service finance leads must explain expenditure assumptions, while the Director of Finance needs an evidence-led agenda for the services and comparable authorities requiring deeper scrutiny.
+
 ## Business problem
 
-The finance directorate must challenge expenditure assumptions across services without treating every spending increase as financial deterioration. Comparing an upper-tier council's social-care responsibilities with a district's narrower service remit can create misleading peer rankings. Parent totals, net expenditure and income items can also be counted inconsistently unless the analytical model follows the accounting structure.
+The finance team must decide which service expenditure assumptions deserve challenge before the next medium-term plan is finalised. Current comparisons show headline authority growth but do not consistently explain which services contributed to it, whether the peer councils have equivalent responsibilities, or whether a boundary change breaks the trend.
+
+This leaves two competing risks: accepting a material pressure without an adequate explanation, or challenging an apparent outlier created by an invalid comparison. The commission is to produce a comparable service-spend change bridge and a documented challenge agenda. The core outturn data supports questions about expenditure pressure; funding adequacy, reserves and budget variance need their own compatible evidence.
 
 ## Commissioned decision
 
@@ -20,9 +26,13 @@ The finance directorate must challenge expenditure assumptions across services w
 
 ## Practical use
 
-During the financial-plan review, the Director opens an authority's change bridge and sees whether adult social care, children's services or another service explains the movement in comparable net expenditure. The finance lead compares equivalent authority types and requests funding, reserve and demand evidence before deciding whether the signal indicates a resilience concern or an expected service change.
+During the annual challenge meeting, the Head of Financial Planning opens an authority's net-current-service-expenditure bridge and identifies which declared service lines explain the cash movement. The relevant adult or children's services finance lead compares the movement with councils carrying equivalent responsibilities and checks whether reorganisation or incomplete returns change the interpretation.
 
-The full [business context](project/BUSINESS_CONTEXT.md) names operational stakeholders, decisions, risks and proposed benefit measures.
+The Director records the case as supported expenditure pressure, further evidence required or comparison invalid. A supported pressure becomes a focused question for the service plan, with a request for demand, funding and reserve evidence as relevant. The team does not propose a service cut or declare an authority financially unsustainable from outturn growth alone.
+
+**Management handover:** A financial-plan challenge pack containing reconciled service-change bridges, a documented peer map, absolute/percentage pressure scenarios and a challenge log. Each challenge must identify the service finance owner, accounting item, comparison basis and missing evidence needed for the next planning decision.
+
+The full [business context](project/BUSINESS_CONTEXT.md) sets out stakeholders, decisions, evidence limits and proposed benefit measures.
 
 ## What must be delivered
 

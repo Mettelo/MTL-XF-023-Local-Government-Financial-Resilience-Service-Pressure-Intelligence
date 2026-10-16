@@ -6,15 +6,19 @@
 
 This fictional directorate/board is an engagement scenario, not an assertion of a real client's circumstances. The source data remains official public/open data.
 
+## Business setting and immediate planning need
+
+The simulated finance directorate is preparing its annual medium-term financial-plan challenge. Service finance leads must explain expenditure assumptions, while the Director of Finance needs an evidence-led agenda for the services and comparable authorities requiring deeper scrutiny.
+
 ## Business problem
 
-The finance directorate must challenge expenditure assumptions across services without treating every spending increase as financial deterioration. Comparing an upper-tier council's social-care responsibilities with a district's narrower service remit can create misleading peer rankings. Parent totals, net expenditure and income items can also be counted inconsistently unless the analytical model follows the accounting structure.
+The finance team must decide which service expenditure assumptions deserve challenge before the next medium-term plan is finalised. Current comparisons show headline authority growth but do not consistently explain which services contributed to it, whether the peer councils have equivalent responsibilities, or whether a boundary change breaks the trend.
+
+This leaves two competing risks: accepting a material pressure without an adequate explanation, or challenging an apparent outlier created by an invalid comparison. The commission is to produce a comparable service-spend change bridge and a documented challenge agenda. The core outturn data supports questions about expenditure pressure; funding adequacy, reserves and budget variance need their own compatible evidence.
 
 ## Why the current process is insufficient
 
-The current scenario relies on separately prepared reports without a common source/metric contract. The material failure to prevent is specific: Incompatible authority responsibilities, accounting hierarchies and coverage-adjusted totals can change the interpretation of apparent financial pressure.
-
-This creates uncertainty over which cases need investigation and which comparisons should be rejected. No quantified loss, backlog, budget deficit or service failure is invented as a client fact.
+Service leads prepare separate explanations while corporate finance compares authority totals. A percentage-growth ranking can overemphasise a small baseline, and a cash-growth ranking can overemphasise large councils. The replacement must reconcile the service hierarchy, show absolute and relative movement together, and record why the selected peer group is relevant.
 
 ## Stakeholders and decisions
 
@@ -32,15 +36,15 @@ Which comparable authorities and service lines show sustained expenditure pressu
 
 ## Practical management use case
 
-During the financial-plan review, the Director opens an authority's change bridge and sees whether adult social care, children's services or another service explains the movement in comparable net expenditure. The finance lead compares equivalent authority types and requests funding, reserve and demand evidence before deciding whether the signal indicates a resilience concern or an expected service change.
+During the annual challenge meeting, the Head of Financial Planning opens an authority's net-current-service-expenditure bridge and identifies which declared service lines explain the cash movement. The relevant adult or children's services finance lead compares the movement with councils carrying equivalent responsibilities and checks whether reorganisation or incomplete returns change the interpretation.
+
+The Director records the case as supported expenditure pressure, further evidence required or comparison invalid. A supported pressure becomes a focused question for the service plan, with a request for demand, funding and reserve evidence as relevant. The team does not propose a service cut or declare an authority financially unsustainable from outturn growth alone.
 
 ## Current-to-target workflow
 
-1. **Before review:** analyst registers the approved files, coverage and definitions; steward checks the cohort and unresolved exceptions.
-2. **At review:** Director of Finance / Section 151 Officer (simulated) opens the overview, then inspects diagnostics and the underlying eligible population before considering a case.
-3. **Challenge:** the relevant stakeholder compares the alternative scenario and asks whether the signal survives missingness, comparability and denominator checks.
-4. **Action:** each accepted case records investigation type, responsible service role, missing evidence, next review and what finding would reverse the recommendation.
-5. **Follow-up:** the next annual medium-term financial planning challenge, with quarterly management follow-up records evidence received and the decision, without claiming the analytical signal itself caused an improvement.
+**Target management handover:** A financial-plan challenge pack containing reconciled service-change bridges, a documented peer map, absolute/percentage pressure scenarios and a challenge log. Each challenge must identify the service finance owner, accounting item, comparison basis and missing evidence needed for the next planning decision.
+
+The meeting's decision record must contain: the selected case and reporting period; the source-backed finding; the decision to investigate, watch, clarify or close; the responsible stakeholder role; the specific additional evidence requested; and the next review point. Add the evidence that would reverse or narrow the recommendation. A watchlist or no-action conclusion is valid when supported; do not fill the shortlist simply to reach ten cases.
 
 ## Required analytical response
 
@@ -56,7 +60,9 @@ During the financial-plan review, the Director opens an authority's change bridg
 
 ## Proposed benefit monitoring
 
-At kickoff, record a baseline review process and propose measures for: time to regenerate the agreed evidence pack; proportion of agenda recommendations with a complete evidence chain; and proportion of accepted investigations with a role owner and next review. The target for recommendation traceability and ownership is 100%; regeneration time is measured during the independent rerun, with no fabricated pre-project baseline or claimed reduction. These are proposed management measures, not achieved service benefits.
+Measure whether every material spend movement in the review has a reconciled service explanation or explicit residual, and whether every accepted challenge has a service finance owner; target 100% ownership. Use the existing 90% change-explanation requirement or account for the residual. Savings, funding gaps and reserve sustainability remain separate evidence-dependent assessments.
+
+Record the preparation and review baseline at kickoff, then measure evidence-pack regeneration during the independent rerun. No pre-project time saving or achieved operational benefit is assumed. The eight-week engagement is assessed on the usability and traceability of the decision pack; later service outcomes require separate follow-up.
 
 ## Scope and evidence limits
 
